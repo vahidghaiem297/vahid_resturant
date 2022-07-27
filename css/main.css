@@ -740,6 +740,9 @@ img {
     padding-top: 0 !important;
   
   }
+  .menu-container h1{
+    font-size: 1rem !important;
+  }
   .menu-container .btn-light{
     display: none !important;
   }
