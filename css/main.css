@@ -744,7 +744,7 @@ img {
     display: none !important;
   }
   .content-btn{
-    display: block;
+    display: grid !important;
   }
     .menu-container ul {
       flex-direction: row;
@@ -753,7 +753,7 @@ img {
         padding: 0 !important; }
         .menu-container ul li a {
           display: block !important;
-          padding: 0.40rem !important;
+          padding: 0.30rem !important;
           white-space: nowrap !important;
           font-size: 1rem !important;
           font-weight: 700;
@@ -816,8 +816,8 @@ img {
   .foot-container {
     grid-template-columns: 1fr !important; } 
  
-  .title-1 h1,.title-2 h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
-    font-size:1.2 !important;
+  .title-1 h1,#menu .title-2 h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
+    font-size:1.2rem !important;
     color: #cda45e !important;
   }
   .tabs-container li{
@@ -825,8 +825,12 @@ img {
   }
   .tabs-container li a{
     padding: 0.50rem;
+    font-size: 1rem;
   }
   .newsletter-btn{
     padding: 0.7rem !important;
+  }
+  .chef .img-container:hover .chefs-info{
+    bottom: -30% !important;
   }
   }
