@@ -22,7 +22,7 @@ p {
 body, html {
   scroll-behavior: smooth !important;
   font-family: "BNazanin";
-  background: #0c0b09;
+/*   background: #0c0b09; */
   overflow-x: hidden; }
 
 ul {
@@ -133,7 +133,7 @@ img {
     color: #fff; }
 
 .header {
-  background: linear-gradient(rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)), url("/../img/hero-bg.jpg") no-repeat center center/cover;
+  background:url("/img/hero-bg.jpg") no-repeat center center/cover;
   height: 100vh;
   padding: 1rem 0; }
 
