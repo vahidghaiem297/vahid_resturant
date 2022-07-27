@@ -22,7 +22,7 @@ p {
 body, html {
   scroll-behavior: smooth !important;
   font-family: "BNazanin";
-  background: #0c0b09;
+/*   background: #0c0b09; */
   overflow-x: hidden; }
 
 ul {
