@@ -95,6 +95,13 @@ img {
       .main-container .info div i {
         color: #cda45e; }
 
+        .fa-bars{
+          color: white;
+          font-size: 2rem;
+          display: none;
+        }
+
+
 .menu {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.7);
@@ -730,18 +737,19 @@ img {
 @media (max-width: 768px) {
  
   .header {
+    height: auto !important;
     padding: 0; }
   .main-container {
     display: none; }
   .menu-container {
     flex-direction: column !important;
-    justify-content: center !important;
+    justify-content: space-between !important;
     text-align: center !important;
     padding-top: 0 !important;
-  
+   background-color: #000;
   }
   .menu-container h1{
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   .menu-container .btn-light{
     display: none !important;
@@ -750,15 +758,18 @@ img {
     display: grid !important;
   }
     .menu-container ul {
-      flex-direction: row;
+     display: flex !important;
+     transition: all 0.5s ease;
+     flex-direction: column;
       margin-top: 1rem; }
+    
       .menu-container ul li {
         padding: 0 !important; }
         .menu-container ul li a {
           display: block !important;
-          padding: 0.30rem !important;
+          padding: 1rem !important;
           white-space: nowrap !important;
-          font-size: 1rem !important;
+          font-size: 1.2rem !important;
           font-weight: 700;
           text-align: center !important; }
   .content-box {

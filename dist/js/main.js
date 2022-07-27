@@ -6,7 +6,7 @@ window.onload =  function(){
         'easing':'ease-in-out',
     });
 
-  
+
 
 }
 $(document).ready(function(){
