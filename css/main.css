@@ -287,7 +287,7 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem; }
   .section1 h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #cda45e; }
 
 .why-us {
@@ -341,7 +341,7 @@ img {
   margin-top: 0; }
   .food-menu h1 {
     font-size: 2rem;
-    color: #a59132; }
+    color: #cda45e; }
 
 .tabs-container {
   display: flex;
@@ -395,8 +395,8 @@ img {
 .special {
   padding: 2rem; }
   .special h1 {
-    font-size: 2rem;
-    color: #a59132; }
+    font-size: 1.2rem;
+    color: #cda45e; }
 
 .special-container {
   display: grid;
@@ -437,7 +437,7 @@ img {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.18); }
   .reserve h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #cda45e; }
   .reserve form {
     display: grid;
@@ -463,7 +463,7 @@ img {
 .gallery {
   padding: 1rem; }
   .gallery h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #cda45e; }
   .gallery img {
     width: 100%;
@@ -477,7 +477,7 @@ img {
 .chef {
   padding: 1rem; }
   .chef h1 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #cda45e; }
   .chef .img-container {
     margin-top: 2rem;
@@ -546,7 +546,7 @@ img {
   gap: 1.5rem !important; }
 
 .contact h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #cda45e;
   padding: 1rem; }
 
@@ -740,8 +740,11 @@ img {
     padding-top: 0 !important;
   
   }
-  .btn-light{
-    display: none;
+  .menu-container .btn-light{
+    display: none !important;
+  }
+  .content-btn{
+    display: block;
   }
     .menu-container ul {
       flex-direction: row;
@@ -812,12 +815,9 @@ img {
       grid-column: 1 !important; }
   .foot-container {
     grid-template-columns: 1fr !important; } 
-  
-  .section1 h1{
-    font-size: 1.5rem !important;
-  }
-  .title-2 h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
-    font-size: 0.90rem !important;
+ 
+  .title-1 h1,.title-2 h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
+    font-size:1.2 !important;
     color: #cda45e !important;
   }
   .tabs-container li{
