@@ -734,7 +734,7 @@ img {
 .colored-txt {
   color: #cda45e; }
 
-@media (max-width: 768px) {
+@media (max-width:500px) {
  
   .header {
     height: auto !important;
