@@ -760,8 +760,8 @@ img {
     .menu-container ul {
      display: flex !important;
      transition: all 0.5s ease;
-     flex-direction: column;
-      margin-top: 1rem; }
+     flex-direction: column !important;
+      margin-top: 1rem !important; }
     
       .menu-container ul li {
         padding: 0 !important; }
@@ -770,7 +770,7 @@ img {
           padding: 1rem !important;
           white-space: nowrap !important;
           font-size: 1.2rem !important;
-          font-weight: 700;
+          font-weight: 700 !important;
           text-align: center !important; }
   .content-box {
     grid-template-columns: 1fr !important;
