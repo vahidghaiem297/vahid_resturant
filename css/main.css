@@ -819,16 +819,16 @@ img {
   .foot-container {
     grid-template-columns: 1fr !important; } 
  
-  .title-1 h1,#menu .title-2 h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
+  .title-1 h1,.food-menu h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
     font-size:1.2rem !important;
     color: #cda45e !important;
   }
   .tabs-container li{
-    padding:0;
+    padding:0 !important;
   }
   .tabs-container li a{
-    padding: 0.50rem;
-    font-size: 1rem;
+    padding: 0.50rem !important;
+    font-size: 1rem !important;
   }
   .newsletter-btn{
     padding: 0.7rem !important;
