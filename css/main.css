@@ -713,9 +713,9 @@ img {
     width: 100px;
     background-color: #cda45e;
     color: #fff;
-    padding: 0.7rem;
+    padding: 0.6rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: absolute;
     border-radius: 25px;
     font-weight: 500;
@@ -911,9 +911,7 @@ img {
     padding: 0.50rem !important;
     font-size: 1rem !important;
   }
-  .newsletter-btn{
-    padding: 0.3rem !important;
-  }
+  
   .chef .img-container:hover .chefs-info{
     bottom: -30% !important;
   }
@@ -930,5 +928,11 @@ img {
   .fa-x{
     display: block;
   }
-
+  .restaurant-info .logo {
+    color: #fff;
+    font-size: 2rem;}
+  
+  .restaurant-info p {
+    color: #fff;
+    padding:0 !important; }
   }
