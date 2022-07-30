@@ -6,6 +6,27 @@ window.onload =  function(){
         'easing':'ease-in-out',
     });
 
+var navbar = document.getElementById("sidebar");
+var close_btn =document.getElementById("close");
+var btn_open = document.getElementById("opennav");
+btn_open.onclick = function(){
+   navbar.style.width="280px";
+   document.getElementById("sidebar-nav").style.display="flex";
+   document.getElementById("logo").style.display="block";
+    document.getElementById("main").style.filter="opacity(.3)";
+    document.getElementById("header").style.filter="opacity(.3)";
+    
+
+ 
+
+}
+close_btn.onclick=function(){
+    navbar.style.width="0px";
+    document.getElementById("sidebar-nav").style.display="none";
+    document.getElementById("logo").style.display="none";
+    document.getElementById("main").style.filter="opacity(1)";
+    document.getElementById("header").style.filter="opacity(1)";
+}
 
 
 }

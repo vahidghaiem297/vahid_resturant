@@ -30,7 +30,11 @@ ul {
 
 a {
   text-decoration: none; }
-
+.fa-bars{
+  color: #fff;
+  font-size: 2rem;
+  display: none;
+}
 img {
   width: 100%; }
 
@@ -95,11 +99,7 @@ img {
       .main-container .info div i {
         color: #cda45e; }
 
-        .fa-bars{
-          color: white;
-          font-size: 2rem;
-          display: none;
-        }
+       
 
 
 .menu {
@@ -251,22 +251,28 @@ img {
     .about .about-container .about-img {
       border: 4px solid #333;
       position: relative;
+      overflow: hidden;
       --webkit-transition:$property $duration;
       --ms-transition:$property $duration;
       --o-transition:$property $duration;
-      transition: all 0.6s; }
-      .about .about-container .about-img:hover {
-        padding: 0.6rem 0.6rem 0 0.6rem; }
+      transition: all 0.6s;
+    
+    }
+    .about .about-container .about-img img{
+      transition: 0.5s ease;
+    }
+      
       .about .about-container .about-img::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 1rem;
+        z-index: 50;
+        left: 1rem;
         border-top: 4px solid #cda45e;
         border-left: 4px solid #cda45e;
         width: 40px;
         height: 40px;
-        margin: 1rem 0 0 1rem;
+       
         --webkit-transition:$property $duration;
         --ms-transition:$property $duration;
         --o-transition:$property $duration;
@@ -274,21 +280,28 @@ img {
       .about .about-container .about-img::after {
         content: "";
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 1rem;
+        right: 1rem;
         border-bottom: 4px solid #cda45e;
         border-right: 4px solid #cda45e;
         width: 40px;
         height: 40px;
-        margin: 0 1rem 1rem 0;
+        z-index: 50;
         --webkit-transition:$property $duration;
         --ms-transition:$property $duration;
         --o-transition:$property $duration;
         transition: all 0.6s; }
       .about .about-container .about-img:hover::before {
-        margin: 0.3rem 0 0 0.3rem; }
+        top: 0.3rem;
+        left: 0.3rem;
+       }
       .about .about-container .about-img:hover::after {
-        margin: 0 0.3rem 0.3rem 0; }
+        bottom: 0.3rem;
+        right: 0.3rem;
+         }
+         .about .about-container .about-img:hover img{
+          transform: scale(1.2);
+         }
 
 .section1 {
   background-color: rgba(0, 0, 0, 0.5);
@@ -605,19 +618,19 @@ img {
   align-items: center; }
   .contact .details-boxes h3 {
     color: white;
-    font-size: 2rem; }
+    font-size: 1rem; }
   .contact .details-boxes p {
-    color: #625b4b;
-    font-size: 1.5rem; }
+    color: #fff;
+    font-size: 0.8rem; }
   .contact .details-boxes i {
     color: white;
     background-color: #cda45e;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     text-align: center;
-    line-height: 50px;
-    margin-left: 1rem; }
+    line-height: 40px;
+    margin: 1rem; }
 
 .contact .contact-form {
   order: 2;
@@ -700,7 +713,7 @@ img {
     width: 100px;
     background-color: #cda45e;
     color: #fff;
-    padding: 0.4rem;
+    padding: 0.7rem;
     text-align: center;
     font-size: 1.5rem;
     position: absolute;
@@ -733,3 +746,189 @@ img {
 
 .colored-txt {
   color: #cda45e; }
+
+.sidenav{
+  position: fixed;
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #111;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  grid-template-columns:1fr;
+  z-index: 1000;
+  text-align: center;
+  transition: all 0.5s linear;
+}
+#close{
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+ 
+}
+.sidenav ul{
+  align-self: flex-start;
+  grid-row: 2 / span 2;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+.sidenav h1{
+  color: #fff;
+  display: none;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.sidenav ul a{
+  display: block;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  transition: all 0.5s ease;
+  padding: 1rem 1.5rem;
+}
+.sidenav ul a:hover{
+  color: #cda45e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:768px){
+    
+  .header {
+    height: auto !important;
+    padding: 0; }
+  .main-container {
+    display: none; }
+  
+  .content-box {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important; }
+    .content-box h1 {
+      font-size: 2rem !important;
+      margin-bottom: 1rem;
+      text-align: center; }
+    .content-box p {
+      font-size: 1.1rem !important;
+      text-align: center; }
+    .content-box .btn-light {
+      width: 100px; }
+    .content-box .content-btn {
+      gap: 0;
+      margin: 0;
+      grid-template-columns: 3fr 3fr !important; }
+      .content-box .content-btn #menu-btn {
+        justify-self: end; }
+  .btn-box {
+    justify-self: center !important;
+    padding: 0;
+    margin-bottom: 5rem;
+    align-self: flex-start; }
+  .about-container {
+    grid-template-columns: 1fr !important; }
+    .about-container h3 {
+      font-size: 1.3rem; }
+  .why-us {
+    grid-template-columns: 1fr !important; }
+  .foods {
+    grid-template-columns: 1fr !important; }
+  .tabs-container li {
+    padding: 1rem; }
+  .special-container {
+    grid-template-columns: 1fr !important; }
+    .special-container .tab-content {
+      flex-direction: column !important; }
+  .reserve form {
+    grid-template-columns: 1fr !important; }
+    .reserve form textarea {
+      grid-column: 1; }
+  .gallery-container {
+    grid-template-columns: 1fr !important; }
+  .chef-container {
+    grid-template-columns: 1fr !important; }
+  .contact-container {
+    grid-template-columns: 1fr !important; }
+    .contact-container h3,p{
+      font-size: 1rem !important;
+    }
+    .contact-container i{
+      color: white;
+      background-color: #cda45e;
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px !important;
+      margin: 1rem !important; 
+    }
+    
+    .contact-container form {
+      grid-template-columns: 1fr !important;
+     
+  }
+      .contact-container form input:nth-child(3) {
+        grid-column: 1 !important; }
+      .contact-container form textarea {
+        grid-column: 1 !important; }
+    .contact-container .btn-form {
+      grid-column: 1 !important; }
+  .foot-container {
+    grid-template-columns: 1fr !important; } 
+ 
+  .title-1 h1,.food-menu h1,.title-3 h1,.title-4 h1,.title-5 h1,.title-6 h1,.title-7 h1{
+    font-size:1.2rem !important;
+    color: #cda45e !important;
+  }
+  .tabs-container li{
+    padding:0 !important;
+  }
+  .tabs-container li a{
+    padding: 0.50rem !important;
+    font-size: 1rem !important;
+  }
+  .newsletter-btn{
+    padding: 0.6rem !important;
+  }
+  .chef .img-container:hover .chefs-info{
+    bottom: -30% !important;
+  }
+
+  .menu-container ul{
+    display: none !important;
+  }
+  #reserve-btn{
+    display: none !important;
+  }
+  .fa-bars{
+    display: block;
+  }
+  .fa-x{
+    display: block;
+  }
+
+  }
